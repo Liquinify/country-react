@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5rem;
+  padding-inline: 1rem;
+
+  &__logo {
+    font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+    padding-inline: 7rem;
+  }
+}

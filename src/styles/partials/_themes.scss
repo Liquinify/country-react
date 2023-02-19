@@ -1,0 +1,101 @@
+@use "../modules/colors" as *;
+@use "../modules/box-shadows" as *;
+
+.dark {
+  color: $white;
+  background-color: $very-dark-blue;
+  min-height: 100vh;
+
+  .navbar {
+    color: $white;
+    background-color: $dark-blue;
+  }
+
+  .item {
+    box-shadow: $shadow-dark;
+
+    &__information {
+      background-color: $very-dark-blue;
+      color: $very-light-gray;
+    }
+
+    &__span {
+      color: $white;
+    }
+  }
+
+  .form__input {
+    background-color: $dark-blue;
+  }
+
+  ::placeholder {
+    color: $white;
+  }
+
+  .select {
+    color: $white;
+    background-color: $dark-blue;
+  }
+
+  .description {
+    &__border {
+      background-color: $dark-blue;
+      box-shadow: $shadow-dark;
+    }
+
+    &__button {
+      box-shadow: $shadow-dark;
+      background-color: $dark-blue;
+    }
+  }
+}
+
+.light {
+  background-color: $white;
+  min-height: 100vh;
+
+  .navbar {
+    color: $dark-900;
+    background-color: $white;
+    box-shadow: $shadow-light-navbar;
+  }
+
+  .item {
+    box-shadow: $shadow-light;
+
+    &__information {
+      background-color: $white;
+      color: $dark-400;
+    }
+
+    &__span {
+      color: $dark-700;
+    }
+
+    &__title {
+      color: $dark-900;
+    }
+  }
+
+  .select {
+    box-shadow: $shadow-light;
+  }
+
+  .form__input {
+    box-shadow: $shadow-light;
+  }
+
+  .description {
+    &__border {
+      box-shadow: $shadow-light;
+    }
+
+    &__button {
+      box-shadow: $shadow-light;
+    }
+
+    &__img {
+      border: 1px solid $dark-900;
+    }
+  }
+}

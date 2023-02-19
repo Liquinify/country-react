@@ -1,0 +1,23 @@
+@use "partials/theme-change";
+@use "partials/navbar";
+@use "partials/country-item";
+@use "partials/searchbar";
+@use "partials/select";
+@use "partials/country-description";
+@use "partials/themes";
+@use "partials/separator";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+

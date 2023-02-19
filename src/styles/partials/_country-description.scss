@@ -1,0 +1,117 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  &__button {
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 2rem;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2px;
+    border: none;
+    margin-top: 2rem;
+    margin-left: 6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    width: 21rem;
+    height: 15rem;
+  }
+
+  &__container {
+    margin-top: 2rem;
+    padding-inline: 2rem;
+  }
+
+  &__lists {
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    row-gap: 0.8rem;
+  }
+
+  &__item {
+    display: inline-flex;
+    gap: 0.2rem;
+  }
+
+  &__border-title {
+    width: 7.5rem;
+  }
+
+  &__borders {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 100%;
+    padding-top: 2rem;
+  }
+
+  &__border {
+    width: 5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .description {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    &__button {
+      display: flex;
+      justify-content: space-evenly;
+      padding-inline: 2rem;
+      align-items: center;
+      position: absolute;
+      width: 8rem;
+      height: 2rem;
+      top: 8rem;
+      left: 11rem;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+      margin-left: 8rem;
+      width: 35rem;
+      height: 25rem;
+    }
+
+    &__container {
+      margin-top: 10rem;
+      margin-right: 5rem;
+    }
+
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2rem;
+      width: 30rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

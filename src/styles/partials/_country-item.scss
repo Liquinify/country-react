@@ -1,0 +1,63 @@
+@use "../modules/box-shadows" as *;
+
+.item {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4rem;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  width: 17.7rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    height: 13rem;
+    row-gap: 1rem;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  &__img {
+    display: flex;
+    width: 17rem;
+    height: 12rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width:900px)  {
+  .item {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 6rem 0 6rem;
+    flex-grow: 1;
+  
+    &__img {
+      width: 18rem;
+      height: 12rem;
+    }
+  
+    &__information {
+      display: flex;
+      flex-direction: column;
+      width: 18rem;
+    }
+  }
+}
+
+

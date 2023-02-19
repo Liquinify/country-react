@@ -1,0 +1,5 @@
+@use './colors' as *;
+
+$shadow-light: 3px 1px 5px 1px $dark-gray;
+$shadow-dark: 3px 1px 5px 1px $very-dark-blue-2;
+$shadow-light-navbar: 2px 0 $dark-gray, 3px 0 $dark-gray, 0 3px 3px -2px $dark-gray;
